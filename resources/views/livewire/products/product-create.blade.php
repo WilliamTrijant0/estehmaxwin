@@ -24,6 +24,9 @@
         <!-- price -->
         <flux:input wire:model="form.price" label="Price" type="number" step="0.01" required />
         
+        <!-- link -->
+        <flux:input wire:model="form.link" label="Link" type="url" placeholder="https://example.com/product-page" />
+        
         <!-- image -->
         <flux:input wire:model="form.image" label="Image" type="file" required />
         <div>

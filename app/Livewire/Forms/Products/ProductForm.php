@@ -13,6 +13,7 @@ class ProductForm extends Form
     public $description = '';
     public $price = '';
     public $image;
+    public $link = '';
 
     public function rules()
     {
@@ -20,6 +21,7 @@ class ProductForm extends Form
             'name' => 'required|string|max:255',
             'description' => 'required|string',
             'price' => 'required|numeric|min:0',
+            'link' => 'nullable|url|max:255',
         ];
 
         if (!isset($this->product) || !$this->product->exists()) {
@@ -42,6 +44,8 @@ class ProductForm extends Form
             'image.required' => 'Product image is required',
             'image.image' => 'File must be an image',
             'image.max' => 'Image size cannot exceed 2MB',
+            'link.url' => 'Link must be a valid URL',
+            'link.max' => 'Link cannot exceed 255 characters',
         ];
     }
 
@@ -51,6 +55,7 @@ class ProductForm extends Form
         $this->name = $product->name;
         $this->description = $product->description;
         $this->price = $product->price;
+        $this->link = $product->link;
     }
 
     public function store()

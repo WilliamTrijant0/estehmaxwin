@@ -5,10 +5,10 @@
         <flux:separator variant="subtle" />
     </div>
 
-    <div class="flex justify-end mb-4">
-        {{-- <div class="w-1/3">
+    <div class="flex justify-between items-center mb-4">
+        <div class="w-1/3">
             <flux:input wire:model.live.debounce.300ms="search" type="text" placeholder="Search products..." />
-        </div> --}}
+        </div>
         <flux:button href="{{ route('products.create') }}" class="justify-end">ADD</flux:button>
     </div>
 
@@ -20,6 +20,7 @@
                     <th scope="col" class="px-6 py-3">Name</th>
                     <th scope="col" class="px-6 py-3 w-1/4">Description</th>
                     <th scope="col" class="px-6 py-3">Price</th>
+                    <th scope="col" class="px-6 py-3">Link</th>
                     <th scope="col" class="px-6 py-3">Image</th>
                     <th scope="col" class="px-6 py-3">Action</th>
                 </tr>
@@ -40,6 +41,15 @@
                             Rp. {{ number_format($product->price) }}
                         </td>
                         <td class="px-6 py-4">
+                            @if($product->link)
+                                <a href="{{ $product->link }}" target="_blank" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                                    {{ \Illuminate\Support\Str::limit($product->link, 30) }}
+                                </a>
+                            @else
+                                <span class="text-gray-400">No link provided</span>
+                            @endif
+                        </td>
+                        <td class="px-6 py-4">
                             <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-16 h-16 object-cover rounded">
                         </td>
                         <td class="px-6 py-4 flex space-x-4 rtl:space-x-reverse">
@@ -49,7 +59,7 @@
                     </tr>
                 @empty
                     <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
-                        <td colspan="6" class="px-6 py-4 text-center">
+                        <td colspan="7" class="px-6 py-4 text-center">
                             No products found.
                         </td>
                     </tr>

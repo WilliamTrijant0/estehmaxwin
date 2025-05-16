@@ -44,6 +44,7 @@ class ProductIndex extends Component
         return view('livewire.products.product-index', [
             'products' => Product::where('name', 'like', '%' . $this->search . '%')
                 ->orWhere('description', 'like', '%' . $this->search . '%')
+                ->orWhere('link', 'like', '%' . $this->search . '%')
                 ->paginate(10),
         ]);
     }
