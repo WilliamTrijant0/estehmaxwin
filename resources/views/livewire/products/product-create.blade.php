@@ -25,7 +25,10 @@
         <flux:input wire:model="form.price" label="Price" type="number" step="0.01" required />
         
         <!-- link -->
-        <flux:input wire:model="form.link" label="Link" type="url" placeholder="https://example.com/product-page" />
+        <div class="space-y-1">
+            <flux:input wire:model="form.link" label="Link" type="url" placeholder="https://api.whatsapp.com/send?phone=628952292484&text=" />
+            <p class="text-sm text-gray-500">Leave empty to use default WhatsApp contact link</p>
+        </div>
         
         <!-- image -->
         <flux:input wire:model="form.image" label="Image" type="file" required />

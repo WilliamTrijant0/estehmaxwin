@@ -62,6 +62,11 @@ class ProductForm extends Form
     {
         $data = $this->validate();
 
+        // Set default WhatsApp link if link is empty
+        if (empty($data['link'])) {
+            $data['link'] = "https://api.whatsapp.com/send?phone=628952292484&text=Saya%20mau%20beli%20es%20teh%20maxwin";
+        }
+
         if ($this->image) {
             $data['image'] = $this->image->store('products', 'public');
         }
@@ -73,6 +78,11 @@ class ProductForm extends Form
     public function update()
     {
         $data = $this->validate();
+
+        // Set default WhatsApp link if link is empty
+        if (empty($data['link'])) {
+            $data['link'] = "https://api.whatsapp.com/send?phone=628952292484&text=Saya%20mau%20beli%20es%20teh%20maxwin";
+        }
 
         if ($this->product) {
             $data['image'] = $this->product->image;
