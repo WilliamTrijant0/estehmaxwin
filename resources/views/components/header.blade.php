@@ -12,7 +12,7 @@
                                 <i class="fas fa-mobile"></i>
                             </div>
                             <div class="text">
-                                <p><a href="">+ 92 ( 307 ) 68 - 06860</a></p>
+                                <p><a href="https://api.whatsapp.com/send?phone=628952292484">+628952292484</a></p>
                             </div>
                         </li>
                         <li>
@@ -20,18 +20,17 @@
                                 <i class="fas fa-envelope-open"></i>
                             </div>
                             <div class="text">
-                                <p><a href="">needhelp@company.com</a></p>
+                                <p><a href="#">anifahfitria7@gmail.com</a></p>
                             </div>
                         </li>
-                    </ul>
-                    <div class="main-header-two__search-cart-box">
+                    </ul>                    <div class="main-header-two__search-cart-box">
                         <div class="main-header-two__search-form-box">
-                            <form class="main-header-two__search-form mc-form" data-url="MC_FORM_URL"
+                            <form class="main-header-two__search-form mc-form" action="{{ route('search') }}" method="GET" 
                                 novalidate="novalidate">
                                 <div class="main-header-two__search-input-box">
                                     <div class="main-header-two__search-icon"><span
                                             class="icon-magnifying-glass"></span></div>
-                                    <input type="search" placeholder="Search here" name="search">
+                                    <input type="search" placeholder="Search products" name="query">
                                     <button type="submit"
                                         class="main-header-two__search-btn thm-btn">Search</button>
                                 </div>
@@ -51,10 +50,11 @@
             <div class="container">
                 <div class="main-menu-two__wrapper-inner">
                     <div class="main-header-two__social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        {{-- <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a> --}}
+                        <a href="https://api.whatsapp.com/send?phone=628952292484"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/esteh.maxwin"><i class="fab fa-instagram"></i></a>
                     </div>
                     <div class="main-menu-two__main-menu-box">
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -71,12 +71,12 @@
                             <li class="scrollToLink">
                                 <a href="#shop">Shop</a>
                             </li>
-                            <li class="scrollToLink">
+                            {{-- <li class="scrollToLink">
                                 <a href="#galery">Galery</a>
                             </li>
                             <li class="scrollToLink">
                                 <a href="#testimonial">Testimonial</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                     <div class="main-menu-two__right">

@@ -16,83 +16,29 @@
                 "delay": 5000
                 }}'>
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="image-layer-two"
-                    style="background-image: url({{ asset('images/backgrounds/main-slider-2-1.jpg') }});"></div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="main-slider-two__content">
-                                <div class="main-slider-two__shape-1 zoom-fade-2">
-                                    <img src="images/shapes/main-slider-two-shape-1.png" alt="">
-                                </div>
-                                <h4 class="main-slider-two__sub-title">Only Organic Products</h4>
-                                <h2 class="main-slider-two__title">Stay Healthy <span>&</span> <br> Eat Organic
-                                </h2>
-                                <div class="main-slider-two__btn-box">
-                                    <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a>
-                                    <a href="product-details.html" class="thm-btn main-slider-two__btn-two">Shop
-                                        now</a>
+            @foreach (\App\Models\MainBanner::all() as $banner)
+                <div class="swiper-slide">
+                    <div class="image-layer-two"
+                        style="background-image: url({{ asset('storage/' . $banner->image) }}); background-size: cover; background-position: center;">
+                    </div>
+                    <!-- /.image-layer -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="main-slider-two__content">
+                                    <h4 class="main-slider-two__sub-title">{{ $banner->sub_title }}</h4>
+                                    <h2 class="main-slider-two__title">{{ $banner->title }}</h2>
+                                    <div class="main-slider-two__btn-box">
+                                        {{-- <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a> --}}
+                                        <a href="#shop" class="thm-btn main-slider-two__btn-two">Shop
+                                            now</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="image-layer-two"
-                    style="background-image: url({{ asset('images/backgrounds/main-slider-2-2.jpg') }});"></div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="main-slider-two__content">
-                                <div class="main-slider-two__shape-1 zoom-fade-2">
-                                    <img src="images/shapes/main-slider-two-shape-1.png" alt="">
-                                </div>
-                                <h4 class="main-slider-two__sub-title">Only Organic Products</h4>
-                                <h2 class="main-slider-two__title">Stay Healthy <span>&</span> <br> Eat Organic
-                                </h2>
-                                <div class="main-slider-two__btn-box">
-                                    <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a>
-                                    <a href="product-details.html" class="thm-btn main-slider-two__btn-two">Shop
-                                        now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="image-layer-two"
-                    style="background-image: url({{ asset('images/backgrounds/main-slider-2-3.jpg') }});"></div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="main-slider-two__content">
-                                <div class="main-slider-two__shape-1 zoom-fade-2">
-                                    <img src="images/shapes/main-slider-two-shape-1.png" alt="">
-                                </div>
-                                <h4 class="main-slider-two__sub-title">Only Organic Products</h4>
-                                <h2 class="main-slider-two__title">Stay Healthy <span>&</span> <br> Eat Organic
-                                </h2>
-                                <div class="main-slider-two__btn-box">
-                                    <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a>
-                                    <a href="product-details.html" class="thm-btn main-slider-two__btn-two">Shop
-                                        now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+            @endforeach
         </div>
 
         <!-- If we need navigation buttons -->

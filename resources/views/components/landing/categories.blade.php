@@ -8,8 +8,8 @@
     </div>
     <div class="container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">Checkout New Products</span>
-            <h2 class="section-title__title">Introdusing latest products</h2>
+            <span class="section-title__tagline">Kategori Teh Max Win</span>
+            <h2 class="section-title__title">Perkenalkan Varian Teh</h2>
         </div>
         <div class="row">
             <!--Categories Two Single Start-->
@@ -18,7 +18,7 @@
                     <div class="categories-two__icon">
                         <span class="icon-vegetable"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="agriculture-services.html">Vegetables</a></h3>
+                    <h3 class="categories-two__title"><a href="agriculture-services.html">Jasmine</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -28,7 +28,7 @@
                     <div class="categories-two__icon categories-two__icon-2">
                         <span class="icon-fruits"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="farming-products.html">Fresh fruits</a></h3>
+                    <h3 class="categories-two__title"><a href="farming-products.html">Vanila</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -38,7 +38,7 @@
                     <div class="categories-two__icon categories-two__icon-3">
                         <span class="icon-cinnamon"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="organic-services.html">Spices</a></h3>
+                    <h3 class="categories-two__title"><a href="organic-services.html">Milk Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -48,7 +48,7 @@
                     <div class="categories-two__icon categories-two__icon-4">
                         <span class="icon-walnut"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="delivery-services.html">Dry fruits</a></h3>
+                    <h3 class="categories-two__title"><a href="delivery-services.html">Thai Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -58,7 +58,7 @@
                     <div class="categories-two__icon categories-two__icon-5">
                         <span class="icon-iced-coffee"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="agriculture-services.html">Beverages</a></h3>
+                    <h3 class="categories-two__title"><a href="agriculture-services.html">Fruit Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -68,7 +68,7 @@
                     <div class="categories-two__icon categories-two__icon-6">
                         <span class="icon-chop"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="delivery-services.html">Meat</a></h3>
+                    <h3 class="categories-two__title"><a href="delivery-services.html">Yakult Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->

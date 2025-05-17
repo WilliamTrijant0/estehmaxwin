@@ -1,7 +1,7 @@
         <!--Video One Start-->
         <section class="video-one">
             <div class="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                style="background-image: url(images/backgrounds/video-one-bg.jpg)"></div>
+                style="background-image: url(images/resources/about2.png)"></div>
             <div class="video-one-border"></div>
             <div class="video-one-border video-one-border-two"></div>
             <div class="video-one-border video-one-border-three"></div>
@@ -13,7 +13,7 @@
                     <div class="col-xl-12">
                         <div class="video-one__inner">
                             <div class="video-one__video-link">
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                <a href="https://www.youtube.com/watch?v=13ARO0HDZsQ" class="video-popup">
                                     <div class="video-one__video-icon">
                                         <span class="fa fa-play"></span>
                                         <i class="ripple"></i>
@@ -23,9 +23,9 @@
                             <div class="video-one__shape">
                                 <img src="images/shapes/video-one-shape-1.png" alt="">
                             </div>
-                            <h2 class="video-one__video-title">Be healthy & eat only
+                            {{-- <h2 class="video-one__video-title">Be healthy & eat only
                                 <br> fresh organic vegetables
-                            </h2>
+                            </h2> --}}
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
         </section>
         <!--Video One End-->
 
-        <!--Cta One Start-->
+        {{-- <!--Cta One Start-->
         <section class="cta-one">
             <div class="cta-one__bg-img" style="background-image: url(images/backgrounds/cta-one-bg-img-1.png);">
             </div>
@@ -55,5 +55,5 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!--Cta One End-->

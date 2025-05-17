@@ -24,8 +24,8 @@
                                 <span class="icon-folder"></span>
                             </div>
                             <div class="subscribe-one__title-box">
-                                <span class="subscribe-one__tagline">Quisque vel ortor</span>
-                                <h2 class="subscribe-one__title">Subscribe to newsletter</h2>
+                                <span class="subscribe-one__tagline">Hubungi Kami</span>
+                                <h2 class="subscribe-one__title">ES TEH MAX WIN</h2>
                             </div>
                         </div>
                     </div>
@@ -37,9 +37,11 @@
                             <div class="subscribe-one__form-box">
                                 <form class="subscribe-one__form mc-form" data-url="MC_FORM_URL">
                                     <div class="subscribe-one__input-box">
-                                        <input type="email" placeholder="Email Address" name="email">
-                                        <button type="submit" class="subscribe-one__btn"><i
-                                                class="fas fa-paper-plane"></i></button>
+                                        <input type="email" placeholder="Saya mau beli es teh maxwin" name="email"
+                                            disabled>
+                                        <a href="https://api.whatsapp.com/send?phone=628952292484&text=Saya%20mau%20beli%20es%20teh%20maxwin"
+                                            target="_blank" class="subscribe-one__btn"><i
+                                                class="fas fa-comment"></i></a>
                                     </div>
                                 </form>
                                 <div class="mc-form__response"></div>
