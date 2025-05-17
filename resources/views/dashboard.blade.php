@@ -41,7 +41,7 @@
                             <th scope="col" class="px-6 py-3">Name</th>
                             <th scope="col" class="px-6 py-3">Price</th>
                             <th scope="col" class="px-6 py-3">Image</th>
-                            <th scope="col" class="px-6 py-3">Actions</th>
+                            {{-- <th scope="col" class="px-6 py-3">Actions</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -52,9 +52,9 @@
                                 <td class="px-6 py-4">
                                     <img src="{{ asset('storage/' . $product->image) }}" alt="Product Image" class="w-16 h-12 object-cover">
                                 </td>
-                                <td class="px-6 py-4">
+                                {{-- <td class="px-6 py-4">
                                     <flux:button href="{{ route('products.edit', $product) }}" size="xs">Edit</flux:button>
-                                </td>
+                                </td> --}}
                             </tr>
                         @endforeach
                     </tbody>
@@ -72,7 +72,7 @@
                             <th scope="col" class="px-6 py-3">Sub Title</th>
                             <th scope="col" class="px-6 py-3">Title</th>
                             <th scope="col" class="px-6 py-3">Image</th>
-                            <th scope="col" class="px-6 py-3">Actions</th>
+                            {{-- <th scope="col" class="px-6 py-3">Actions</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -83,9 +83,9 @@
                                 <td class="px-6 py-4">
                                     <img src="{{ asset('storage/' . $banner->image) }}" alt="Banner Image" class="w-16 h-12 object-cover">
                                 </td>
-                                <td class="px-6 py-4">
+                                {{-- <td class="px-6 py-4">
                                     <flux:button href="{{ route('main-banner.edit') }}" size="xs" >Edit</flux:button>
-                                </td>
+                                </td> --}}
                             </tr>
                         @endforeach
                     </tbody>
