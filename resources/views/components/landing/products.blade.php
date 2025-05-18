@@ -51,10 +51,9 @@
                                             <div class="hot-products__btn-box">
                                                 <a href="{{ $product->link ?? '#' }}" class="hot-products__btn thm-btn" {{ $product->link ? 'target="_blank"' : '' }}>Buy</a>
                                             </div>
-                                        </div>
-                                        <div class="hot-products__icon-boxes">
-                                            <a href="#"><i class="far fa-heart"></i></a>
-                                            <a href="#"><i class="fas fa-eye"></i></a>
+                                        </div>                                        <div class="hot-products__icon-boxes">
+                                            {{-- <a href="#"><i class="far fa-heart"></i></a> --}}
+                                            <a href="{{ route('product.show', $product->id) }}"><i class="fas fa-eye"></i></a>
                                         </div>
                                     </div>
                                 </div>

@@ -13,4 +13,9 @@ class BerandaController extends Controller
         // dd($products);
         return view('beranda', compact('products'));
     }
+    
+    public function show(Product $product)
+    {
+        return view('product-details', compact('product'));
+    }
 }

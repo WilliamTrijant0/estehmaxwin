@@ -18,7 +18,7 @@
                     <div class="categories-two__icon">
                         <span class="icon-vegetable"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="agriculture-services.html">Jasmine</a></h3>
+                    <h3 class="categories-two__title">Jasmine</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -28,7 +28,7 @@
                     <div class="categories-two__icon categories-two__icon-2">
                         <span class="icon-fruits"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="farming-products.html">Vanila</a></h3>
+                    <h3 class="categories-two__title">Vanila</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -36,9 +36,9 @@
             <div class="col-xl-2 col-lg-4 col-md-4">
                 <div class="categories-two__single" style="--accent-color: #50a72c;">
                     <div class="categories-two__icon categories-two__icon-3">
-                        <span class="icon-cinnamon"></span>
+                        <span class="icon-milk-box"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="organic-services.html">Milk Tea</a></h3>
+                    <h3 class="categories-two__title">Milk Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -48,7 +48,7 @@
                     <div class="categories-two__icon categories-two__icon-4">
                         <span class="icon-walnut"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="delivery-services.html">Thai Tea</a></h3>
+                    <h3 class="categories-two__title">Thai Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -56,9 +56,9 @@
             <div class="col-xl-2 col-lg-4 col-md-4">
                 <div class="categories-two__single" style="--accent-color: #5580d7;">
                     <div class="categories-two__icon categories-two__icon-5">
-                        <span class="icon-iced-coffee"></span>
+                        <span class="icon-fruits"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="agriculture-services.html">Fruit Tea</a></h3>
+                    <h3 class="categories-two__title">Fruit Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->
@@ -66,9 +66,9 @@
             <div class="col-xl-2 col-lg-4 col-md-4">
                 <div class="categories-two__single" style="--accent-color: #dd637c;">
                     <div class="categories-two__icon categories-two__icon-6">
-                        <span class="icon-chop"></span>
+                        <span class="icon-fruit"></span>
                     </div>
-                    <h3 class="categories-two__title"><a href="delivery-services.html">Yakult Tea</a></h3>
+                    <h3 class="categories-two__title">Yakult Tea</a></h3>
                 </div>
             </div>
             <!--Categories Two Single End-->

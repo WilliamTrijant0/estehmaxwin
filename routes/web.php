@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\BerandaController::class, 'index'])->name('beranda');
 Route::get('/search', [SearchController::class, 'search'])->name('search');
+Route::get('/product/{product}', [App\Http\Controllers\BerandaController::class, 'show'])->name('product.show');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
